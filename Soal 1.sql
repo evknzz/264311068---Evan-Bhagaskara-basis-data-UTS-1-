@@ -1,4 +1,6 @@
-# tb_nasabah
+# Membuat 3 tabel dari proyek kelompok Saya yang saling berelasi
+
+## tb_nasabah
 CREATE TABLE tb_nasabah (
     ID_Nasabah     INT PRIMARY KEY,
     Nama_Nasabah   VARCHAR(100) NOT NULL,
@@ -6,14 +8,14 @@ CREATE TABLE tb_nasabah (
     Status_Nasabah VARCHAR(20)  NOT NULL
 );
 
-# tb_laporan
+## tb_laporan
 CREATE TABLE tb_laporan (
     No_Laporan          VARCHAR(20) PRIMARY KEY,
     Tanggal_Pemeriksaan DATE NOT NULL,
     Status_Laporan      VARCHAR(100) NOT NULL
 );
 
-# tb_transaksi
+## tb_transaksi
 CREATE TABLE tb_transaksi (
     ID_Transaksi       VARCHAR(10) PRIMARY KEY,
     Tanggal_Pengiriman DATE NOT NULL,
