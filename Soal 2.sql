@@ -1,4 +1,4 @@
-# [CREATE]
+-- [CREATE]
 INSERT INTO tb_nasabah VALUES
 (1001, 'Andi Pratama',  'Perorangan', 'Aktif'),
 (1002, 'Budi Santoso',  'Perorangan', 'Aktif'),
@@ -20,5 +20,19 @@ INSERT INTO tb_transaksi VALUES
 ('TRX005', '2026-09-16', 1001, 1005, 10000000, 'Transfer', NULL, NULL),
 ('TRX006', '2026-09-16', 1005, 1006,  9000000, 'Transfer', NULL, NULL);
 
-# [READ]
+
+-- [READ]
 SELECT * FROM tb_nasabah;
+
+
+-- [UPDATE]
+--- cek hasil sebelum di UPDATE
+SELECT * FROM tb_transaksi WHERE ID_Transaksi = 'TRX005';
+
+--- ngeupdate nominal uang menjadi 12jt pada TRX005
+UPDATE tb_transaksi
+SET Nominal = 12000000
+WHERE ID_Transaksi = 'TRX005';
+
+--- cek hasil setelah di update nominal uangnya
+SELECT * FROM tb_transaksi WHERE ID_Transaksi = 'TRX005';
