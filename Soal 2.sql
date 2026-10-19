@@ -1,4 +1,3 @@
-
 # [CREATE]
 INSERT INTO tb_nasabah VALUES
 (1001, 'Andi Pratama',  'Perorangan', 'Aktif'),
@@ -20,3 +19,6 @@ INSERT INTO tb_transaksi VALUES
 ('TRX004', '2026-09-15', 1004, 1001, 40000000, 'Transfer', 'LTM-003', 'Membentuk siklus'),
 ('TRX005', '2026-09-16', 1001, 1005, 10000000, 'Transfer', NULL, NULL),
 ('TRX006', '2026-09-16', 1005, 1006,  9000000, 'Transfer', NULL, NULL);
+
+# [READ]
+SELECT * FROM tb_nasabah;
