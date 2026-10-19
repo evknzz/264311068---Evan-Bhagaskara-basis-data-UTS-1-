@@ -36,3 +36,13 @@ WHERE ID_Transaksi = 'TRX005';
 
 --- cek hasil setelah di update nominal uangnya
 SELECT * FROM tb_transaksi WHERE ID_Transaksi = 'TRX005';
+
+
+-- [DELETE]
+--- Membuat data dummy
+INSERT INTO tb_transaksi VALUES
+('TRX007', '2026-09-17', 1002, 1005, 5000000, 'Transfer', NULL, NULL);
+
+--- eksekusi delete ke dummy data
+DELETE FROM tb_transaksi
+WHERE ID_Transaksi = 'TRX007';
